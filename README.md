@@ -5,7 +5,7 @@
 This package contains some utility classes that have zero dependencies and are concerned with flow control.
 When I implemented these, I could not find a simple availeble solution that fits my needs, so I implemented one.
 
-## LazyBucket
+## LeakyBucket
 
 This class is basically a rate limiter following the [leaky bucket](https://de.wikipedia.org/wiki/Leaky-Bucket-Algorithmus) algorithm.
 It does not have to be disposed, uses minimal locking while being threadsafe.
