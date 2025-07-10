@@ -37,17 +37,14 @@ public class ProbabilityRamp
     {
         get
         {
-            lock (_lock)
-            {
-                var elapsed = DateTime.UtcNow - _startTime;
+            var elapsed = DateTime.UtcNow - _startTime;
 
-                if (elapsed >= MaxTimespan)
-                    return MaximumChance;
+            if (elapsed >= MaxTimespan)
+                return MaximumChance;
 
-                // Linear interpolation between min and max based on elapsed time
-                var progress = elapsed.TotalMilliseconds / MaxTimespan.TotalMilliseconds;
-                return MinimumChance + (progress * (MaximumChance - MinimumChance));
-            }
+            // Linear interpolation between min and max based on elapsed time
+            var progress = elapsed.TotalMilliseconds / MaxTimespan.TotalMilliseconds;
+            return MinimumChance + (progress * (MaximumChance - MinimumChance));
         }
     }
 
@@ -57,7 +54,11 @@ public class ProbabilityRamp
         {
             var currentChance = CurrentChance;
             var randomValue = Random.Shared.NextDouble();
-            return randomValue < currentChance;
+            var result = randomValue < currentChance;
+            if (result)
+                Reset();
+
+            return result;
         }
     }
 
