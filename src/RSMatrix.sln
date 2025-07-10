@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.12.35527.113
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RSFlowControl", "RSFlowControl\RSFlowControl.csproj", "{973D5F43-767A-4542-A1E2-05BD792800A5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RSFlowControl.Tests", "RSFlowControl.Tests\RSFlowControl.Tests.csproj", "{A893D334-35A8-4EAA-9E5E-EE2AEFDFA28E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{973D5F43-767A-4542-A1E2-05BD792800A5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{973D5F43-767A-4542-A1E2-05BD792800A5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{973D5F43-767A-4542-A1E2-05BD792800A5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{973D5F43-767A-4542-A1E2-05BD792800A5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A893D334-35A8-4EAA-9E5E-EE2AEFDFA28E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A893D334-35A8-4EAA-9E5E-EE2AEFDFA28E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A893D334-35A8-4EAA-9E5E-EE2AEFDFA28E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A893D334-35A8-4EAA-9E5E-EE2AEFDFA28E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
