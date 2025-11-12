@@ -8,6 +8,9 @@ build:
 test:
 	dotnet run --configuration Release --project src/RSFlowControl.Tests/RSFlowControl.Tests.csproj --coverage --report-trx
 
+ide:
+	code .
+
 clean-release:
 	rm -rf src/RSFlowControl/bin/Release/
 
