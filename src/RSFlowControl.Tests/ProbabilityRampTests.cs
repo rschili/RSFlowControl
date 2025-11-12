@@ -1,5 +1,3 @@
-using TUnit.Assertions.AssertConditions.Throws;
-
 namespace RSFlowControl.Tests;
 
 public class ProbabilityRampTests

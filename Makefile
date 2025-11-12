@@ -5,6 +5,9 @@ default: build
 build:
 	dotnet build src/
 
+test:
+	dotnet run --configuration Release --project src/RSFlowControl.Tests/RSFlowControl.Tests.csproj --coverage --report-trx
+
 clean-release:
 	rm -rf src/RSFlowControl/bin/Release/
 
